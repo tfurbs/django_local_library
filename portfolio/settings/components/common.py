@@ -166,13 +166,12 @@ else:
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
-# DATABASES = { 'default': {'ENGINE': 'django.db.backends.postgresql_psycopg2', 'NAME':'personal-website', 'USER':'Tyson', 'PASSWORD':'Cracker', 'HOST': localhost, 'PORT'}}
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'django-local-library',
         'USER': 'Tyson',
-        'PASSWORD': 'cracker',
+        'PASSWORD': 'Cracker95!',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
