@@ -166,8 +166,8 @@ else:
 # Heroku: Update database configuration from $DATABASE_URL.
 import dj_database_url
 db_from_env = dj_database_url.config(conn_max_age=600)
-# DATABASES['default'].update(db_from_env)
-DATABASES = { 'default': dj_database_url.config(conn_max_age=600) }
+DATABASES['default'].update(db_from_env)
+# DATABASES = { 'default': dj_database_url.config(conn_max_age=600) }
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
